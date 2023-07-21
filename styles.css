@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial y final (no se mueve) */
+    }
+    50% {
+      transform: translateY(-10px); /* Mover 10 píxeles hacia arriba */
+    }
+  }
+  
+:root{
+    background-color: black;
+}
+a{
+    background-color: none;
+    text-decoration: none;
+}
+.wrapper{
+    font-family: 'VT323', monospace;
+
+}
+.nav{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(231, 57, 228, 0.804);
+    padding: 1%;
+    font-size: 1.3rem;
+
+}
+.logo{
+    font-size: 2rem;
+    padding-left: 5%;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.info p:hover  {
+    transform: scale(1.1);
+}
+
+.description-wrapper{
+    padding-top: 12%;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.description-wrapper .decription{
+    width: 60%;
+    margin: 5%;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.description-wrapper img{
+    animation: moveUpDown 3s infinite;
+    width: 20%;
+    margin: 5%;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 10%;
+    padding-top: 1%;
+}
+.buy p{
+    width: 11%;
+    padding: 2%;
+    border: 2px solid wheat;
+    border-radius: 1rem;
+}
+.buy p:hover{
+    transform: scale(1.1);
+}
+.why-wrapper{
+    background-color: black;
+    padding: 4%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-content: center;
+    align-items: center;
+}
+.why-wrapper img{
+    animation: moveUpDown 3s infinite;
+    width: 35%;
+    padding: 5%;
+}
+.why{
+    width: 70%;
+    color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    font-size: 1.2rem;
+
+}
+.why h3{
+    font-size: 2rem;
+
+    display: flex;
+    align-self: end;
+}
+.about{
+    background-color: black;
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.2rem;
+    padding-bottom: 15%;
+}
+.about h4 {
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+footer{
+    width: 100%;
+    padding-top: 2%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(231, 223, 209);
+}
+footer img{
+    width: 10%;
+    margin: 5%;
+}
+footer img:hover{
+    transform: scale(1.2);
+}
+.social{
+    width: 50%;
+}
+.contact{
+    width: 50%;
+    font-size: .8rem;
+}

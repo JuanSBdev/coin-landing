@@ -125,11 +125,10 @@ a{
 footer{
     width: 100%;
     padding-top: 2%;
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    color: rgb(158, 66, 212);
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid rgb(231, 223, 209);
 }
 footer img{
     width: 10%;
